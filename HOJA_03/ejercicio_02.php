@@ -16,7 +16,7 @@
             $dias=5;
             
             date_modify($fechaActual, "-$dias days"); //puede restarlo porque es un objeto datetime en vez de una cadena
-            $fechaFormateada = date_format($fechaActual, "d-m-Y");
+            $fechaFormateada = date_format($fechaActual, "d-m-Y"); //$fecha->format('d-m-Y')
 
             print"Fecha restando " . $dias . " dias: " . $fechaFormateada . "<br/>"; 
         ?>

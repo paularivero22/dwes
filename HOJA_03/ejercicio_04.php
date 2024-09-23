@@ -17,7 +17,7 @@
             $mes=9;
             $anio=2024;
 
-            $fechaDiff = date_create("$anio-$mes-$dia");
+            $fechaDiff = date_create("$anio-$mes-$dia"); //$fechaDiff = "2024-09-19"
             $fechaDiffF = date_format($fechaDiff, "d-m-Y");
             print"Segunda fecha: " . $fechaDiffF . "<br/>";
 

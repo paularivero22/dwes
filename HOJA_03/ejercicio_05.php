@@ -17,11 +17,11 @@
             $segundos = 0;
 
             $fecha = date_create("$anio-$mes-$dia $hora:$minutos:$segundos");
-            $fechaF = date_format($fecha, "d-m-Y H:i:s");
+            $fechaF = date_format($fecha, "d-m-Y H:i:s"); 
 
             $horas = 4;
 
-            date_modify($fecha, "+$horas hours");
+            date_modify($fecha, "+$horas hours"); //strtotime()
             $fechaFinalF = date_format($fecha, "d-m-Y H:i:s");
 
             print"Fecha Inicial: " . $fechaF . "<br/>";

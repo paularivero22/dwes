@@ -14,10 +14,12 @@
             $anio = 2004;
 
             if(checkdate($dia, $mes, $anio)) {
-                print"La fecha es valida";
+                print"La fecha es valida"; 
             } else {
                 print"La fecha no es valida";
             }
+
+            //echo checkdate($mes, $dia, $anio) ? "La fecha es correcta" : "La fecha no es correcta"
         ?>
     </body>
 </html>
