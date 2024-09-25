@@ -9,13 +9,13 @@
     <body>
         <?php
         $suma = 0;
-            for($i = 10; i<=100,>$i++) {
+            for($i = 10; i<=100; $i++) {
                 if($i % 2 == 0) {
                     $suma += $i;
                 }
             }
 
-            print"La suma es: " . $suma . <br/>;
+            print"La suma es: " . $suma . "<br/>";
         ?>
     </body>
 </html>
