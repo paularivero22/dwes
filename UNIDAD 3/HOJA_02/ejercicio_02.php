@@ -7,7 +7,7 @@
 </head>
 <body>
     <?php
-        function suma($num1, $num2) {
+        function suma($num1, $num2): mixed { //mixed: puede devolver cualquier tipo de numero
             return $num1 + $num2;
         }
 

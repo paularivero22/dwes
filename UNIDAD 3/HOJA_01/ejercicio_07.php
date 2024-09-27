@@ -13,7 +13,7 @@
 
             for($i=1; $i <= 10; $i++) {
                 $numerador = $i;
-                $denominador = 2 ** $i;   
+                $denominador = 2 ** $i;  //2^$i
                 $serie .= $numerador . "/" . $denominador ."<br/>";
             }
 

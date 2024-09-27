@@ -7,7 +7,7 @@
 </head>
 <body>
     <?php
-        function imprimir_mensaje($mensaje) {
+        function imprimir_mensaje($mensaje): void {
             echo $mensaje . "<br/>";
         }
 

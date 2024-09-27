@@ -7,7 +7,7 @@
 </head>
 <body>
     <?php
-        function capicua($num) {
+        function capicua($num): void {
             $numero=$num;
             $inverso=0;
             $aux=$numero;
@@ -22,20 +22,27 @@
             echo "El numero $numero NO es capicúa<br />";
         }
 
-        function redondear($num) {
-            return floor($num);
+        function redondear($num): int {
+            /* if(($num - (int)$num) > 0.50) {
+                return ceil($num); 
+            } else {
+                return floor($num);
+            }
+                */
+            return round($num);
         }
 
         function numDigitos($num) {
             $numStr = strval($num);
             $digitos = 0;
 
-            for($i=0; $i <= strlen($numStr);$i++) {
+            for($i=0; $i <= mb_strlen($numStr);$i++) {
                 $digitos++;
             }
+            return digitos;
         }
 
-        $numero = 212;
+        $numero = 212.50;
         echo 'Numero redondeado: ' . redondear($numero) . "<br/>";
         echo 'Numero de digitos: ' . numDigitos($numero);
     ?>

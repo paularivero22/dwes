@@ -8,11 +8,11 @@
 <body>
     <?php
         function interesSimple($capital, $redito, $tiempo) {
-            return $capital * $redito * $tiempo;
+            return ($capital * $redito * $tiempo) + $capital;
         }
 
         function interesCompuesto($capital, $redito, $tiempo) {
-            return $capital * $redito * ($tiempo / 365);
+            return $capital * pow((1 + $redito), $tiempo) - $capital;
         }
 
         $capital = 1000;

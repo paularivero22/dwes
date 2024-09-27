@@ -16,7 +16,7 @@
             $precioNormal = $distancia * $precioPorKm * 2;
 
             if($diasEstancia > 7 && $distancia > 800) {
-                $descuento = $precioNormal * 0.30;
+                $descuento = $precioNormal * 0.7;
                 $precioFinal = $precioNormal - $descuento;
             } else {
                 $precioFinal = $precioNormal;
