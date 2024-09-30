@@ -24,7 +24,7 @@
         $digito1 = 11 - ($suma1 % 11);
         if ($digito1 == 10)
             $digito1 = 1;
-        if ($digito1 == 11)
+        if ($digito1 == 11) 
             $digito1 = 0;
 
         // Calcular los dígitos de control para cuenta
