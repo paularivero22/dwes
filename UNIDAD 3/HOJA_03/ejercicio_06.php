@@ -9,18 +9,10 @@
 
 <body>
     <?php
-    $verbos = ["Amar", "Correr", "Vivir"];
-    $numVerbos;
-
-    for ($i = 0; $i < count($verbos); $i++) {
-        $numVerbos++;
-    }
-    $verbo = rand(1, $numVerbos);
-
     function conjugarVerbo($verbo)
     {
-        $terminacion = substr($verbo, -2); // Obtener la terminación del verbo
-        $raiz = substr($verbo, 0, -2); // Obtener la raíz del verbo
+        $terminacion = substr($verbo, -2); //terminación del verbo
+        $raiz = substr($verbo, 0, -2); //verbo sin terminacion
     
         $conjugaciones = [
             "yo" => "",
@@ -62,10 +54,28 @@
             default:
                 return "Verbo no válido.";
         }
-
         return $conjugaciones;
     }
 
+    $verbos = ["Amar", "Correr", "Vivir"];
+    $numVerbos = 0;
+
+    for ($i = 0; $i < count($verbos); $i++) {
+        $numVerbos++;
+    }
+    $verboPos = rand(1, $numVerbos);
+    $verbo = "";
+
+    switch ($verboPos) {
+        case 1:
+            $verbo = "Amar";
+        case 2:
+            $verbo = "Correr";
+        case 3:
+            $verbo = "Vivir";
+    }
+
+    var_dump (conjugarVerbo($verbo));
     ?>
 </body>
 

@@ -3,43 +3,39 @@
 
 class Circulo
 {
-    private $radio;
+    private float $radio;
 
-    public function __construct($radio)
+    public function __construct(float $radio)
     {
         $this->radio = $radio;
     }
 
-    public function setRadio($radio)
+    public function setRadio(float $radio): void
     {
         $this->radio = $radio;
     }
 
-    public function getRadio()
+    public function getRadio(): float
     {
         return $this->radio;
     }
 
-    public function __set($name, $value)
+    public function __set($name, $value): void
     {
-        if ($name === 'radio') {
-            $this->radio = $value;
-        }
+        $this->$name = $value;
     }
 
-    public function __get($name)
+    public function __get($name): mixed
     {
-        if ($name === 'radio') {
-            return $this->radio;
-        }
+        return $this->$name;
     }
 
-    public function area()
+    public function area(): float
     {
         return pi() * pow($this->radio, 2);
     }
 
-    public function circunferencia()
+    public function circunferencia(): float
     {
         return 2 * pi() * $this->radio;
     }
