@@ -1,0 +1,21 @@
+{
+    "name": "paula/01-primerproyecto",
+    "description": "primer proyecto con composer",
+    "type": "project",
+    "authors": [
+        {
+            "name": "paularivero22",
+            "email": "paula.riveroherreros@iesmiguelherrero.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "hackzilla/password-generator": "^1.7"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    },
+    "scripts": {
+		"start": "php -S localhost:8001 -t public"
+	}
+} 
