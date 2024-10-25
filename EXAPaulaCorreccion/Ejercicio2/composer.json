@@ -1,0 +1,21 @@
+{
+    "name": "paula/ejercicio2",
+    "type": "project",
+    "authors": [
+        {
+            "name": "paula"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "scripts": {
+        "start": "php -S localhost:8000 -t public"
+    }
+}

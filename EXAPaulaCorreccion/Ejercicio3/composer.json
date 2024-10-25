@@ -1,0 +1,11 @@
+{
+    "name": "ejercicio3/paula",
+    "type": "project",
+    "authors": [
+        {
+            "name": "paula"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}

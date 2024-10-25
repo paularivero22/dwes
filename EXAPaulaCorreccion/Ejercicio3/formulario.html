@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="procesa.php" method="post">
+        <label for="numNombre">Numero de nombres: </label>
+        <input type="number" name="numNombre" id="numNombre" value="<?php echo (isset($_POST['Cargar'])?:$_POST['numNombre']:0)?>">
+        <br>
+
+        <label for="numEmail">Numero de emails: </label>
+        <input type="number" name="numEmail" id="numEmail" value="<?php echo (isset($_POST['Cargar'])?:$_POST['numEmail']:0)?>">
+        <br>
+
+        <label for="numTelfs">Numero de telefonos moviles: </label>
+        <input type="number" name="numTelfs" id="numTelfs" value="<?php echo (isset($_POST['Cargar'])?:$_POST['numTelfs']:0)?>">
+        <br>
+
+        <input type="submit" value="Cargar">
+    </form>
+</body>
+</html>
