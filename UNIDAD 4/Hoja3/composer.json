@@ -1,0 +1,20 @@
+{
+    "name": "paula/hoja3",
+    "type": "project",
+    "authors": [
+        {
+            "name": "paularivero22",
+            "email": "paulariveroherreros789@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Clases\\": "Clases/"
+        }
+    },
+    "scripts": {
+        "start": "php -S localhost:8000 -t Public"
+    }
+}

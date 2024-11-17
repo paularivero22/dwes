@@ -1,0 +1,17 @@
+{
+    "name": "paula/hoja5",
+    "type": "project",
+    "authors": [
+        {
+            "name": "paularivero22",
+            "email": "paulariveroherreros789@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "App\\": "Clases/"
+        }
+    }
+}
