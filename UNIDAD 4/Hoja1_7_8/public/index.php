@@ -75,16 +75,16 @@ if ($connection instanceof PDO) {
         <h4>Datos del nuevo jugador</h4>
 
         <label for="nombre">Nombre: </label>
-        <input type="text" name="nombre" id="nombre">
+        <input type="text" name="nombre" id="nombre" required>
         <br>
         <label for="procedencia">Procedencia: </label>
-        <input type="text" name="procedencia" id="procedencia">
+        <input type="text" name="procedencia" id="procedencia" required>
         <br>
         <label for="altura">Altura: </label>
-        <input type="number" name="altura" id="altura">
+        <input type="number" name="altura" id="altura" required>
         <br>
         <label for="peso">Peso: </label>
-        <input type="number" name="peso" id="peso">
+        <input type="number" name="peso" id="peso" required>
         <br>    
         <label for="posicion">Posicion: </label>
         <select id="posicion" required>

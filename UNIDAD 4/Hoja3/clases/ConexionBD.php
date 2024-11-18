@@ -12,7 +12,7 @@ class ConexionBD {
             $host = 'localhost';
             $dbname = 'dwes_03_funicular';
             $user = 'root';
-            $password = '';
+            $password = 'root';
             try {
                 self::$conexion = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $user, $password);
                 self::$conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);

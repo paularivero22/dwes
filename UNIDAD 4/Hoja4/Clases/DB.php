@@ -4,7 +4,7 @@ namespace App;
 class DB {
     private const DSN = 'mysql:host=localhost;dbname=dwes_04_supermercado;charset=utf8';
     private const USUARIO = 'root';
-    private const PASSWORD = '';
+    private const PASSWORD = 'root';
     private static ?PDO $conexion = null;
 
     private function __construct() {}
