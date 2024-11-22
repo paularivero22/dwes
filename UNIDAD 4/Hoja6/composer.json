@@ -1,0 +1,23 @@
+{
+    "name": "paula/hoja6",
+    "type": "project",
+    "authors": [
+        {
+            "name": "paularivero22",
+            "email": "paula.riveroherreros@iesmiguelherrero.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "App\\": "public/"
+        }, 
+        "files": [
+            "App/helper.php"
+        ]
+    }, 
+    "scripts": {
+		"start": "php -S localhost:8001 -t public"
+	}
+}
