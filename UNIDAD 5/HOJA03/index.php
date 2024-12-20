@@ -19,9 +19,9 @@ function registrarVisita() {
 }
 
 if (count($_SESSION['visitas']) == 0) {
-    echo "¡Bienvenido! Es tu primera visita.";
+    echo "Es tu primera visita.";
 } else {
-    echo "Tus visitas anteriores fueron en los siguientes momentos: <br>";
+    echo "visitas anteriores: <br>";
     foreach ($_SESSION['visitas'] as $visita) {
         echo $visita . "<br>";
     }
